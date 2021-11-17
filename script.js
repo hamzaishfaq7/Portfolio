@@ -1,7 +1,9 @@
-const toggle = document.getElementsByClassName('toggle')[0]
-const navbarLinks = document.getElementsByClassName('navbarLinks')[0]
-
-
-toggle.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active')
-})
+/* Open */
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+  
+  /* Close */
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
