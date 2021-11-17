@@ -57,7 +57,7 @@ html {
 
 
 .text-box h1{
-    color: grey;
+    color: white;
     text-align: center;
 
 }
@@ -74,7 +74,7 @@ html {
 
 .project_heading{
   padding-top: 285px;
-  color: grey;
+  color: white;
   position: relative;
 }
 
@@ -86,13 +86,13 @@ html {
 .projects h1{
     text-align: center;
     font-size: 50px;;
-    color: grey;
+    color: white;
 }
 
 .projects h2{
     text-align: center;
     font-size: 40px;
-    color: grey;
+    color: white;
 }
 
 .SStarImage{
@@ -105,7 +105,7 @@ html {
 
 
 .ChangeColor{
-    color: grey;
+    color: white;
   }
   
   
@@ -122,14 +122,14 @@ html {
       text-align:center;
   }
   .s-heading h1{
-      color:grey;
+      color:white;
       font-size: 5.5rem;
       font-weight: 400;
       letter-spacing: 1px;
       margin: 0px;
   }
   .s-heading p{
-      color: grey;
+      color: white;
       font-size: 3rem;
       margin: 5px;
       text-align: center;
@@ -159,14 +159,14 @@ html {
     padding: 5px;
   }
   .s-box h1{
-      color:grey;
+      color:white;
       letter-spacing: 1px;
       font-size: 3rem;
       margin-bottom: 8px;
       
   }
   .s-box p{
-      color: grey;
+      color: white;
       text-align: center;
     font-size: 1.8rem;
   }
@@ -174,11 +174,11 @@ html {
       width: 140px;
       height: 40px;
       border-radius: 20px;
-      border:1px solid grey;
+      border:1px solid white;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color:grey;
+      background-color:white;
       margin-top:10px; 
     text-decoration: none;
     font-size: 1.5rem;
@@ -264,23 +264,20 @@ html {
 
 
 
+.grid {
+  display: flex;
+  align-content: center;
+  padding-left: 600px;
+  padding-right: 500px;
+  padding-top: 50px;
+  grid-gap: 4rem;
+}
 
 .grid img {
   align-content: center;
   max-width: 70%;
   height: 90px;
   position: relative;
-}
-
-
-.grid {
-  display: -moz-inline-grid;
-  align-content: center;
-  padding-left: 450px;
-  padding-top: 50px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 2rem;
-  padding-bottom: 55px;
 }
 
 body {
