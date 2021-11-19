@@ -10,9 +10,36 @@ html{
     padding: 0;
     background-color: #302d2d;
   }
+  
+  .dark-mode {
+    background-color: white;
+   }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
 
 
 /*THIS IS THE CODE FOR THE NAVBAR LAYOUT*/
@@ -118,7 +145,7 @@ html{
 
 
 
-
+/*THIS IS THE CODE FOR THE MAIN TEXT LAYOUT*/
 
 
 
@@ -233,40 +260,7 @@ html{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*THIS IS THE END OF THE CODE FOR THE MAIN TEXT LAYOUT*/
 
 
 
@@ -309,7 +303,11 @@ html{
     height: 200vh;
 }
 
+
+
 /*THIS IS THE CODE FOR THE FLIP CARDS LAYOUT*/
+
+
   .services{
       width:100%;
       height: 70vh;
@@ -413,17 +411,7 @@ html{
       color:#FFFFFF;
       transition: all ease 0.3s;
   }
-  .s-box:hover .bar{
-      display: block;
-  }
-  @keyframes bar{
-      0%{
-          width:0px;
-      }
-      100%{
-          width:100px;
-      }
-  }
+  
   @media(max-width:1050px){
       .s-box-container{
           flex-wrap: wrap;
@@ -451,8 +439,7 @@ html{
 /*THIS IS THE END OF THE CODE FOR THE  PROJECTS SECTION*/
 
 
-
-
+/*THIS IS THE CODE FOR THE ABOUT ME SECTION*/
 
 
 .aboutMe h1{
@@ -498,6 +485,8 @@ html{
   color: beige;
 }
 
+
+/*THIS IS THE END OF THE CODE FOR THE ABOUT ME SECTION*/
 
 
 
