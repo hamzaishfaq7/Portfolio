@@ -1,67 +1,246 @@
-html {
-    scroll-behavior: smooth;
 
-  }
-  
-  *{
-  
-    box-sizing: border-box;
+
+
+  body {
+
     margin: 0;
     padding: 0;
-    width: auto;
-    height: auto;
-    align-items: center;
-  
-  }
-  
-  body{
-    margin: 0;
-    padding: 0;
+    background-color: #302d2d;
   }
 
 
-  /*THIS IS THE CODE FOR THE NAVBAR LAYOUT*/
-  /*THIS IS THE END OF THE CODE FOR THE NAVBAR LAYOUT*/
 
 
 
+/*THIS IS THE CODE FOR THE NAVBAR LAYOUT*/
 
 
-/*THIS IS THE CODE FOR THE VIDEO LAYOUT*/
-
-
-.video{
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #302d2d;
+  color: white;
 }
 
-.container{
+.logo{
+  max-width: 250px;
+  padding: 0 10px;
+  overflow: hidden;
+  margin: .5rem;
+}
+
+
+.navbarLinks ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+
+.navbarLinks li{
+  list-style: none;
+
+}
+
+.navbarLinks li a{
+  text-decoration: none;
+  color: white;
+  padding: 2rem;
+  display: block;
+  font-size: 25px;
+}
+
+.navbarLinks a:hover{
+  color: tomato;
+}
+
+.toggle{
+  position: absolute;
+  top: 6.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 41px;
+  height: 31px;
+}
+
+.toggle .barsForMobile{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 600px) {
+  .toggle{
+    display: flex;
+  }
+
+  .navbarLinks {
+    display: none;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
+  }
 
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.text-box{
-    position: absolute;
-    font-size: 30px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
+  .navbarLinks ul{
+    width: 100%;
+    flex-direction: column;
+  }
 
-
-.text-box h1{
-    color: white;
+  .navbarLinks li{
     text-align: center;
+  }
 
+  .navbarLinks a{
+    padding: 0.5rem 1rem;
+  }
+
+  .navbarLinks.active {
+    display: flex;
+  }
 }
-/*THIS IS THE END OF THE CODE FOR THE VIDEO LAYOUT*/
+
+
+
+
+/*THIS IS THE END OF THE CODE FOR THE NAVBAR LAYOUT*/
+
+
+
+
+
+
+
+
+  .cater3-movingBG {
+      height: 100%;
+      background-image: url("./Pictures/toronto.jpg");
+      background-size: 125%;
+      background-repeat: repeat-x;
+      animation: animatedBackground 15s linear alternate infinite;
+  }
+  
+  @keyframes animatedBackground {
+      0% { background-position: 0 0; }
+      50% { background-position: 50% 0; }
+      100% { background-position: 0 0; }
+  }
+  
+  .flyinTxtCont {
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      padding-bottom: 10%;
+        margin-left: 2em;
+  }
+  .flyIn {
+      color:tomato;
+      font-family:'Raleway';
+      text-transform:uppercase;
+      line-height:1.2em;
+      position: relative;
+    text-shadow: 2px 2px 40px rgba(0,0,0,0.2);
+  }
+  .lineOne {
+    transition-delay:.2s; 
+    transition:.4s ease in;
+    animation: txtFlyIn .3s linear;
+  }
+  .lineTwo {
+      transition-delay:.4s; 
+      transition:.6s ease in;
+      animation: txtFlyIn .6s linear;
+  }
+  .lineThree {
+      transition-delay:.6s; 
+      transition:.8s ease in;
+      animation: txtFlyIn .9s linear;
+  }
+  .lineOne, .lineTwo, .lineThree {
+      font-size:110px;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+  .lineFour {
+      transition-delay:2s; 
+      transition:2s ease in;
+      animation: fadeIn 2s linear;
+      width: 100%;
+      background-color:tan;
+      display:inline-block;
+      color:#000;
+      box-size:border-box;
+      max-width:63%;
+      max-width: 22em;
+      font-size: 32px;
+      padding: .2em .5em;
+      margin-top: 30px;
+  }
+  @keyframes fadeIn{
+      0% { opacity:0;}
+      100% { opacity:1;}
+  }
+  @keyframes txtFlyIn{
+      0% { transform:translateX(-100%); }
+      100% { transform:translateX(0%); }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*THIS IS THE CODE PROJECTS SECTION*/
@@ -73,9 +252,11 @@ html {
 }
 
 .project_heading{
-  padding-top: 285px;
-  color: white;
   position: relative;
+}
+
+.project_heading h1{
+  padding-bottom: 50px;
 }
 
 .projects{
@@ -102,13 +283,6 @@ html {
 }
 
 /*THIS IS THE CODE FOR THE FLIP CARDS LAYOUT*/
-
-
-.ChangeColor{
-    color: white;
-  }
-  
-  
   .services{
       width:100%;
       height: 70vh;
@@ -117,25 +291,31 @@ html {
       justify-content: space-evenly;
       align-items: center;
     vertical-align: top;
+    
+    width: 100%;
   }
   .s-heading{
       text-align:center;
+      width: 100%;
   }
   .s-heading h1{
-      color:white;
+      color:tomato;
       font-size: 5.5rem;
       font-weight: 400;
       letter-spacing: 1px;
       margin: 0px;
+      
+      width: 100%;
   }
   .s-heading p{
-      color: white;
+      color: darkgrey;
       font-size: 3rem;
       margin: 5px;
       text-align: center;
   }
   .s-box-container{
       width:100%;
+      height: 100%;
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -159,14 +339,14 @@ html {
     padding: 5px;
   }
   .s-box h1{
-      color:white;
+      color:tomato;
       letter-spacing: 1px;
       font-size: 3rem;
       margin-bottom: 8px;
       
   }
   .s-box p{
-      color: white;
+      color: darkgrey;
       text-align: center;
     font-size: 1.8rem;
   }
@@ -220,6 +400,8 @@ html {
   @media(max-width:1050px){
       .s-box-container{
           flex-wrap: wrap;
+          width:100%;
+          padding-top: 5px;
           
       }	
       .services{
@@ -248,11 +430,12 @@ html {
 
 .aboutMe h1{
   font-size: 80px;
-  padding-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;;
   align-content: center;
   flex-direction: column;
   text-align: center;
-  color: black;
+  color: tomato;
   letter-spacing: 1px;
   font-size: 3rem;
   margin-bottom: 8px;
@@ -260,28 +443,21 @@ html {
 }
 
 
-
-
-
-
-.grid {
-  display: flex;
-  align-content: center;
-  padding-left: 600px;
-  padding-right: 500px;
-  padding-top: 50px;
-  grid-gap: 4rem;
+.icons {
+  width: 100%; /* Full-width */
+  overflow: auto; /* Overflow due to float */
+  
 }
 
-.grid img {
-  align-content: center;
-  max-width: 70%;
-  height: 90px;
-  position: relative;
+.iconsSorted {
+
 }
 
-body {
-  margin: 2rem;
+.icons img {
+  float: none; /* Float links side by side */
+  width: 10%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 12px 0; /* Some top and bottom padding */
+  
 }
 
 
@@ -304,33 +480,15 @@ body {
 
 
 
-.footer {
-  padding: 55px;
-  color: white;
-  position: relative;
-  align-items: center;
+.workTogether{
+  background-color: tomato;
 }
 
-.footer h1{
-  color: white;
-}
-
-
-.button {
-  border: none;
-  color: black;
-  font-size: 24px;
-  padding: 20px 40px;
-  text-align: center;
+.workTogether a{
+  color: #302d2d;
   text-decoration: none;
-  display: inline-block;
-  margin: 40px 700px;
-  cursor: pointer;
-  border-radius: 16px;
-  align-self: center;
 }
 
-.button a{
-  text-decoration: none;
-  color: black;
-}
+
+
+
