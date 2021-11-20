@@ -1,51 +1,37 @@
-
-html{
-  font-family: 'Anton', sans-serif;
+html {
+  font-family: "Anton", sans-serif;
   scroll-behavior: smooth;
 }
 
-  body {
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #302d2d;
+}
 
-    margin: 0;
-    padding: 0;
-    background-color: #302d2d;
-  }
-  
-  .dark-mode {
-    background-color: white;
-   }
+.dark-mode {
+  background-color: white;
+}
 
+.resume {
+  background-color: tomato;
+  border: none;
+  color: white;
+  margin-top: 40px;
+  width: auto;
+  cursor: pointer;
+  font-size: 20px;
+  align-items: center;
+  padding: 0px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
+.resume:hover {
+  background-color: orange;
+}
 
 /*THIS IS THE CODE FOR THE NAVBAR LAYOUT*/
 
-
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,28 +40,25 @@ html{
   padding-bottom: -100px;
 }
 
-.logo{
+.logo {
   max-width: 250px;
   max-height: 150px;
   padding: 0 5px;
   overflow: hidden;
-  margin: .2rem;
+  margin: 0.2rem;
 }
 
-
-.navbarLinks ul{
+.navbarLinks ul {
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-
-.navbarLinks li{
+.navbarLinks li {
   list-style: none;
-
 }
 
-.navbarLinks li a{
+.navbarLinks li a {
   text-decoration: none;
   color: white;
   padding: 2rem;
@@ -83,11 +66,11 @@ html{
   font-size: 25px;
 }
 
-.navbarLinks a:hover{
+.navbarLinks a:hover {
   color: tomato;
 }
 
-.toggle{
+.toggle {
   position: absolute;
   top: 6.5rem;
   right: 1rem;
@@ -98,16 +81,15 @@ html{
   height: 31px;
 }
 
-.toggle .barsForMobile{
+.toggle .barsForMobile {
   height: 3px;
   width: 100%;
   background-color: white;
   border-radius: 10px;
 }
 
-
 @media (max-width: 600px) {
-  .toggle{
+  .toggle {
     display: flex;
   }
 
@@ -121,16 +103,16 @@ html{
     align-items: flex-start;
   }
 
-  .navbarLinks ul{
+  .navbarLinks ul {
     width: 100%;
     flex-direction: column;
   }
 
-  .navbarLinks li{
+  .navbarLinks li {
     text-align: center;
   }
 
-  .navbarLinks a{
+  .navbarLinks a {
     padding: 0.5rem 1rem;
   }
 
@@ -139,322 +121,311 @@ html{
   }
 }
 
-
 /*THIS IS THE END OF THE CODE FOR THE NAVBAR LAYOUT*/
-
-
-
 
 /*THIS IS THE CODE FOR THE MAIN TEXT LAYOUT*/
 
-
-
-  .cater3-movingBG {
-      height: 100%;
-      background-image: url("./Pictures/toronto.jpg");
-      background-size: 125%;
-      height: 100%;
-      width: 100%;
-      background-repeat: repeat-x;
-      animation: animatedBackground 15s linear alternate infinite;
-  }
-  
-  @keyframes animatedBackground {
-      0% { background-position: 0 0; }
-      50% { background-position: 50% 0; }
-      100% { background-position: 0 0; }
-  }
-  
-  .flyinTxtCont {
-      height: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: start;
-      -ms-flex-align: start;
-      align-items: flex-start;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-      padding-bottom: 10%;
-        margin-left: 2em;
-  }
-  .flyIn {
-      color:tomato;
-      font-family:'Raleway';
-      text-transform:uppercase;
-      line-height:1.2em;
-      position: relative;
-    text-shadow: 2px 2px 40px rgba(0,0,0,0.2);
-  }
-  .lineOne {
-    transition-delay:.2s; 
-    transition:.4s ease in;
-    animation: txtFlyIn .3s linear;
-    font-family: 'Anton', sans-serif;
-  }
-  .lineTwo {
-      transition-delay:.4s; 
-      transition:.6s ease in;
-      animation: txtFlyIn .6s linear;
-      font-family: 'Anton', sans-serif;
-  }
-  .lineThree {
-      transition-delay:.6s; 
-      transition:.8s ease in;
-      animation: txtFlyIn .9s linear;
-      font-family: 'Anton', sans-serif;
-  }
-  .lineOne, .lineTwo, .lineThree {
-      font-size:110px;
-      font-weight: bold;
-      letter-spacing: 3px;
-      font-family: 'Anton', sans-serif;
-    }
-  .lineFour {
-      transition-delay:2s; 
-      transition:2s ease in;
-      animation: fadeIn 2s linear;
-      width: 100%;
-      background-color:tan;
-      display:inline-block;
-      color:#000;
-      box-size:border-box;
-      max-width:63%;
-      max-width: 22em;
-      font-size: 32px;
-      padding: .2em .5em;
-      margin-top: 30px;
-      font-family: 'Anton', sans-serif;
-  }
-  @keyframes fadeIn{
-      0% { opacity:0;}
-      100% { opacity:1;}
-  }
-  @keyframes txtFlyIn{
-      0% { transform:translateX(-100%); }
-      100% { transform:translateX(0%); }
-  }
-
-
-  @media(max-width:1050px){
-    .lineOne{
-        font-size: 45px;
-        
-    }	
-    .lineTwo{
-      font-size: 45px;
-    }
-    .lineThree{
-      font-size: 45px;
-    }
-    .lineFour{
-      font-size: 25px;
-    }
-    
+.cater3-movingBG {
+  height: 100%;
+  background-image: url("./Pictures/toronto.jpg");
+  background-size: 125%;
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat-x;
+  animation: animatedBackground 15s linear alternate infinite;
 }
 
+@keyframes animatedBackground {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 
+.flyinTxtCont {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-bottom: 10%;
+  margin-left: 2em;
+}
+.flyIn {
+  color: tomato;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  line-height: 1.2em;
+  position: relative;
+  text-shadow: 2px 2px 40px rgba(0, 0, 0, 0.2);
+}
+.lineOne {
+  transition-delay: 0.2s;
+  transition: 0.4s ease in;
+  animation: txtFlyIn 0.3s linear;
+  font-family: "Anton", sans-serif;
+}
+.lineTwo {
+  transition-delay: 0.4s;
+  transition: 0.6s ease in;
+  animation: txtFlyIn 0.6s linear;
+  font-family: "Anton", sans-serif;
+}
+.lineThree {
+  transition-delay: 0.6s;
+  transition: 0.8s ease in;
+  animation: txtFlyIn 0.9s linear;
+  font-family: "Anton", sans-serif;
+}
+.lineOne,
+.lineTwo,
+.lineThree {
+  font-size: 110px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: "Anton", sans-serif;
+}
+.lineFour {
+  transition-delay: 2s;
+  transition: 2s ease in;
+  animation: fadeIn 2s linear;
+  width: 100%;
+  background-color: tan;
+  display: inline-block;
+  color: #000;
+  box-size: border-box;
+  max-width: 63%;
+  max-width: 22em;
+  font-size: 32px;
+  padding: 0.2em 0.5em;
+  margin-top: 30px;
+  font-family: "Anton", sans-serif;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes txtFlyIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@media (max-width: 1050px) {
+  .lineOne {
+    font-size: 45px;
+  }
+  .lineTwo {
+    font-size: 45px;
+  }
+  .lineThree {
+    font-size: 45px;
+  }
+  .lineFour {
+    font-size: 25px;
+  }
+}
 
 /*THIS IS THE END OF THE CODE FOR THE MAIN TEXT LAYOUT*/
 
-
-
 /*THIS IS THE CODE PROJECTS SECTION*/
 
-
-.format{
+.format {
   justify-content: center;
   align-content: center;
 }
 
-.project_heading{
+.project_heading {
   position: relative;
 }
 
-.project_heading h1{
+.project_heading h1 {
   padding-bottom: 50px;
 }
 
-.projects{
+.projects {
   align-content: center;
   margin: 4px;
 }
 
-.projects h1{
-    text-align: center;
-    font-size: 50px;;
-    color: white;
+.projects h1 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
 }
 
-.projects h2{
-    text-align: center;
-    font-size: 40px;
-    color: white;
+.projects h2 {
+  text-align: center;
+  font-size: 40px;
+  color: white;
 }
 
-.SStarImage{
-    position: absolute;
-    width: 100%;
-    height: 200vh;
+.SStarImage {
+  position: absolute;
+  width: 100%;
+  height: 200vh;
 }
-
-
 
 /*THIS IS THE CODE FOR THE FLIP CARDS LAYOUT*/
 
-
-  .services{
-      width:100%;
-      height: 70vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-    vertical-align: top;
-    
-    width: 100%;
-  }
-  .s-heading{
-      text-align:center;
-      width: 100%;
-  }
-  .s-heading h1{
-      color:tomato;
-      font-size: 5.5rem;
-      font-weight: 400;
-      letter-spacing: 1px;
-      margin: 0px;
-      
-      width: 100%;
-  }
-  .s-heading p{
-      color: darkgrey;
-      font-size: 3rem;
-      margin: 5px;
-      text-align: center;
-  }
-  .s-box-container{
-      width:100%;
-      height: 100%;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-  }
-  .s-box{
-      display:flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border-radius: 10px;
-      width:500px;
-      padding: 8px 25px;
-      height: 500px;
-      box-sizing: border-box;
-      margin: 30px;
-      position: relative;
-  }
-  .s-box img{
-      height: 300px;
-    width: 100%;
-    padding: 5px;
-  }
-
-  .s-box2 img{
-    height: 300px;
+.services {
   width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  vertical-align: top;
 
+  width: 100%;
+}
+.s-heading {
+  text-align: center;
+  width: 100%;
+}
+.s-heading h1 {
+  color: tomato;
+  font-size: 5.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0px;
+
+  width: 100%;
+}
+.s-heading p {
+  color: darkgrey;
+  font-size: 3rem;
+  margin: 5px;
+  text-align: center;
+}
+.s-box-container {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.s-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 500px;
+  padding: 8px 25px;
+  height: 500px;
+  box-sizing: border-box;
+  margin: 30px;
+  position: relative;
+}
+.s-box img {
+  height: 300px;
+  width: 100%;
+  padding: 5px;
 }
 
+.s-box2 img {
+  height: 300px;
+  width: 100%;
+}
 
-  .s-box h1{
-      color:tomato;
-      letter-spacing: 1px;
-      font-size: 3rem;
-      margin-bottom: 8px;
-      
+.s-box h1 {
+  color: tomato;
+  letter-spacing: 1px;
+  font-size: 3rem;
+  margin-bottom: 8px;
+}
+.s-box p {
+  color: darkgrey;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.s-btn {
+  width: 140px;
+  height: 80px;
+  border-radius: 20px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 10px;
+}
+.bar {
+  width: 100px;
+  height: 6px;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
+  background-color: #cfbcdf;
+  border-radius: 0px 0px 10px 10px;
+  display: none;
+  animation: bar 0.8s;
+}
+.s-box:hover {
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.08);
+  transition: all ease 0.5s;
+}
+.s-btn:hover {
+  background-color: orangered;
+  border: 1px solid orangered;
+  color: #ffffff;
+  transition: all ease 0.3s;
+}
+
+@media (max-width: 1050px) {
+  .s-box-container {
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 5px;
   }
-  .s-box p{
-      color: darkgrey;
-      text-align: center;
-    font-size: 1.8rem;
+  .services {
+    height: auto;
   }
-  .s-btn{
-      width: 140px;
-      height: 80px;
-      border-radius: 20px;
-      border:1px solid white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color:white;
-      margin-top:10px; 
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: black;
-    margin-bottom: 10px;;
+  .s-heading {
+    margin: 15px;
   }
-  .bar{
-      width: 100px;
-      height: 6px;
-      position: absolute;
-      left: 50%;
-      top: 0%;
-      transform: translateX(-50%);
-      background-color:#CFBCDF; 
-      border-radius: 0px 0px 10px 10px;
-      display: none;
-      animation: bar 0.8s;
+  .s-box {
+    flex-grow: 3;
   }
-  .s-box:hover{
-      box-shadow: 2px 2px 30px rgba(0,0,0,0.08);
-      transition: all ease 0.5s;
-  }
-  .s-btn:hover{
-      background-color:orangered;
-      border: 1px solid orangered;
-      color:#FFFFFF;
-      transition: all ease 0.3s;
-  }
-  
-  @media(max-width:1050px){
-      .s-box-container{
-          flex-wrap: wrap;
-          width:100%;
-          padding-top: 5px;
-          
-      }	
-      .services{
-          height: auto;
-      }
-      .s-heading{
-          margin: 15px;
-      }
-      .s-box{
-          flex-grow: 3;
-      }
-      
-  }
-  
-  
-  
-  
-  /*THIS IS THE END OF THE CODE FOR THE FLIP CARD LAYOUT*/
+}
+
+/*THIS IS THE END OF THE CODE FOR THE FLIP CARD LAYOUT*/
 
 /*THIS IS THE END OF THE CODE FOR THE  PROJECTS SECTION*/
 
-
 /*THIS IS THE CODE FOR THE ABOUT ME SECTION*/
 
-
-.aboutMe h1{
+.aboutMe h1 {
   font-size: 80px;
   padding-top: 20px;
-  padding-bottom: 20px;;
+  padding-bottom: 20px;
   align-content: center;
   flex-direction: column;
   text-align: center;
@@ -465,16 +436,13 @@ html{
   position: relative;
 }
 
-.aboutMe h2{
+.aboutMe h2 {
   color: darkgrey;
 }
-
 
 .icons {
   width: 100%; /* Full-width */
   overflow: auto; /* Overflow due to float */
-  
-  
 }
 
 .iconsSorted {
@@ -486,30 +454,10 @@ html{
   float: none; /* Float links side by side */
   width: 10%; /* Equal width (5 icons with 20% width each = 100%) */
   padding: 12px 0; /* Some top and bottom padding */
-  
 }
 
-
-.changeColor{
+.changeColor {
   color: beige;
 }
 
-
 /*THIS IS THE END OF THE CODE FOR THE ABOUT ME SECTION*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
