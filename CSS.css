@@ -6,7 +6,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #302d2d;
+  background-color: #4E4D67;
 }
 
 .dark-mode {
@@ -14,7 +14,7 @@ body {
 }
 
 .resume {
-  background-color: tomato;
+  background-color: #EBE8E0;
   border: none;
   color: white;
   margin-top: 40px;
@@ -26,7 +26,7 @@ body {
 }
 
 .resume:hover {
-  background-color: orange;
+  background-color: #869ACB;
 }
 
 /*THIS IS THE CODE FOR THE NAVBAR LAYOUT*/
@@ -35,8 +35,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #302d2d;
-  color: white;
+  background-color: #4E4D67;
+  color: #EBE8E0;
   padding-bottom: -100px;
 }
 
@@ -60,14 +60,14 @@ body {
 
 .navbarLinks li a {
   text-decoration: none;
-  color: white;
+  color: #EBE8E0;
   padding: 2rem;
   display: block;
   font-size: 25px;
 }
 
 .navbarLinks a:hover {
-  color: tomato;
+  color: #869ACB;
 }
 
 .toggle {
@@ -84,7 +84,7 @@ body {
 .toggle .barsForMobile {
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color: #EBE8E0;
   border-radius: 10px;
 }
 
@@ -130,7 +130,7 @@ body {
   background-image: url("./Pictures/toronto.jpg");
   background-size: 125%;
   height: 100%;
-  width: 100%;
+  width: 105%;
   background-repeat: repeat-x;
   animation: animatedBackground 15s linear alternate infinite;
 }
@@ -166,7 +166,7 @@ body {
   margin-left: 2em;
 }
 .flyIn {
-  color: tomato;
+  color: #4E4D67;
   font-family: "Raleway";
   text-transform: uppercase;
   line-height: 1.2em;
@@ -178,6 +178,7 @@ body {
   transition: 0.4s ease in;
   animation: txtFlyIn 0.3s linear;
   font-family: "Anton", sans-serif;
+  padding-top: 10px;
 }
 .lineTwo {
   transition-delay: 0.4s;
@@ -204,9 +205,9 @@ body {
   transition: 2s ease in;
   animation: fadeIn 2s linear;
   width: 100%;
-  background-color: tan;
+  background-color: #869ACB;
   display: inline-block;
-  color: #000;
+  color: #4E4D67;
   box-size: border-box;
   max-width: 63%;
   max-width: 22em;
@@ -272,13 +273,13 @@ body {
 .projects h1 {
   text-align: center;
   font-size: 50px;
-  color: white;
+  color: #869ACB;
 }
 
 .projects h2 {
   text-align: center;
   font-size: 40px;
-  color: white;
+  color: #869ACB;
 }
 
 .SStarImage {
@@ -305,7 +306,7 @@ body {
   width: 100%;
 }
 .s-heading h1 {
-  color: tomato;
+  color: white;
   font-size: 5.5rem;
   font-weight: 400;
   letter-spacing: 1px;
@@ -314,7 +315,7 @@ body {
   width: 100%;
 }
 .s-heading p {
-  color: darkgrey;
+  color: #869ACB;
   font-size: 3rem;
   margin: 5px;
   text-align: center;
@@ -345,19 +346,19 @@ body {
   padding: 5px;
 }
 
-.s-box2 img {
-  height: 300px;
+.picture2 img {
+  height: 100%;
   width: 100%;
 }
 
 .s-box h1 {
-  color: tomato;
+  color: #869ACB;
   letter-spacing: 1px;
   font-size: 3rem;
   margin-bottom: 8px;
 }
 .s-box p {
-  color: darkgrey;
+  color: #869ACB;
   text-align: center;
   font-size: 1.8rem;
 }
@@ -369,7 +370,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #869ACB;
   margin-top: 10px;
   text-decoration: none;
   font-size: 1.5rem;
@@ -383,7 +384,7 @@ body {
   left: 50%;
   top: 0%;
   transform: translateX(-50%);
-  background-color: #cfbcdf;
+  background-color: white;
   border-radius: 0px 0px 10px 10px;
   display: none;
   animation: bar 0.8s;
@@ -393,8 +394,8 @@ body {
   transition: all ease 0.5s;
 }
 .s-btn:hover {
-  background-color: orangered;
-  border: 1px solid orangered;
+  background-color: darkgrey;
+  border: 1px solid white;
   color: #ffffff;
   transition: all ease 0.3s;
 }
@@ -429,7 +430,7 @@ body {
   align-content: center;
   flex-direction: column;
   text-align: center;
-  color: tomato;
+  color: white;
   letter-spacing: 1px;
   font-size: 3rem;
   margin-bottom: 8px;
@@ -437,7 +438,7 @@ body {
 }
 
 .aboutMe h2 {
-  color: darkgrey;
+  color: #869ACB;
 }
 
 .icons {
@@ -457,7 +458,7 @@ body {
 }
 
 .changeColor {
-  color: beige;
+  color: white;
 }
 
 /*THIS IS THE END OF THE CODE FOR THE ABOUT ME SECTION*/
