@@ -1,7 +1,7 @@
+// THIS IS THE CODE TO MAKE THE TOGGLE WORK FOR SMALLER SCREENS/MOBILE SCREENS.
 
 
-
-  const toggle = document.getElementsByClassName('toggle')[0]
+const toggle = document.getElementsByClassName('toggle')[0]
 const navbarLinks = document.getElementsByClassName('navbarLinks')[0]
 
 
@@ -12,7 +12,7 @@ toggle.addEventListener('click', () => {
 
 
 
-
+// THIS IS THE CODE TO CHANGE TO DARK MODE. STILL WORKING ON THIS PART OF THE SITE.
 
 
 

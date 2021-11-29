@@ -1,3 +1,5 @@
+/*THIS IS THE CODE FOR THE GENERAL LAYOUT FOR THE PAGE*/
+
 html {
   font-family: "Anton", sans-serif;
   scroll-behavior: smooth;
@@ -6,7 +8,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #4E4D67;
+  background-color: #4e4d67;
 }
 
 .dark-mode {
@@ -14,7 +16,7 @@ body {
 }
 
 .resume {
-  background-color: #EBE8E0;
+  background-color: #ebe8e0;
   border: none;
   color: white;
   margin-top: 40px;
@@ -26,8 +28,10 @@ body {
 }
 
 .resume:hover {
-  background-color: #869ACB;
+  background-color: #869acb;
 }
+
+/*THIS IS THE END OF THE CODE FOR THE GENERAL LAYOUT FOR THE PAGE*/
 
 /*THIS IS THE CODE FOR THE NAVBAR LAYOUT*/
 
@@ -35,8 +39,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #4E4D67;
-  color: #EBE8E0;
+  background-color: #4e4d67;
+  color: #ebe8e0;
   padding-bottom: -100px;
 }
 
@@ -60,14 +64,14 @@ body {
 
 .navbarLinks li a {
   text-decoration: none;
-  color: #EBE8E0;
+  color: #ebe8e0;
   padding: 2rem;
   display: block;
   font-size: 25px;
 }
 
 .navbarLinks a:hover {
-  color: #869ACB;
+  color: #869acb;
 }
 
 .toggle {
@@ -84,7 +88,7 @@ body {
 .toggle .barsForMobile {
   height: 3px;
   width: 100%;
-  background-color: #EBE8E0;
+  background-color: #ebe8e0;
   border-radius: 10px;
 }
 
@@ -166,7 +170,7 @@ body {
   margin-left: 2em;
 }
 .flyIn {
-  color: #4E4D67;
+  color: #4e4d67;
   font-family: "Raleway";
   text-transform: uppercase;
   line-height: 1.2em;
@@ -205,9 +209,9 @@ body {
   transition: 2s ease in;
   animation: fadeIn 2s linear;
   width: 90%;
-  background-color: #869ACB;
+  background-color: #869acb;
   display: inline-block;
-  color: #4E4D67;
+  color: #4e4d67;
   box-size: border-box;
   max-width: 63%;
   max-width: 22em;
@@ -250,13 +254,12 @@ body {
 
 /*THIS IS THE END OF THE CODE FOR THE MAIN TEXT LAYOUT*/
 
-/*THIS IS THE CODE PROJECTS SECTION*/
+/*THIS IS THE CODE FOR THE PROJECTS SECTION*/
 
 .format {
   justify-content: center;
   align-content: center;
 }
-
 
 .project_heading {
   position: relative;
@@ -274,13 +277,13 @@ body {
 .projects h1 {
   text-align: center;
   font-size: 50px;
-  color: #869ACB;
+  color: #869acb;
 }
 
 .projects h2 {
   text-align: center;
   font-size: 40px;
-  color: #869ACB;
+  color: #869acb;
 }
 
 .SStarImage {
@@ -316,7 +319,7 @@ body {
   width: 100%;
 }
 .s-heading p {
-  color: #869ACB;
+  color: #869acb;
   font-size: 3rem;
   margin: 5px;
   text-align: center;
@@ -353,13 +356,13 @@ body {
 }
 
 .s-box h1 {
-  color: #869ACB;
+  color: #869acb;
   letter-spacing: 1px;
   font-size: 3rem;
   margin-bottom: 8px;
 }
 .s-box p {
-  color: #869ACB;
+  color: #869acb;
   text-align: center;
   font-size: 1.8rem;
 }
@@ -371,7 +374,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #869ACB;
+  background-color: #869acb;
   margin-top: 10px;
   text-decoration: none;
   font-size: 1.5rem;
@@ -420,7 +423,7 @@ body {
 
 /*THIS IS THE END OF THE CODE FOR THE FLIP CARD LAYOUT*/
 
-/*THIS IS THE END OF THE CODE FOR THE  PROJECTS SECTION*/
+/*THIS IS THE END OF THE CODE FOR THE PROJECTS SECTION*/
 
 /*THIS IS THE CODE FOR THE ABOUT ME SECTION*/
 
@@ -440,12 +443,12 @@ body {
 }
 
 .aboutMe h2 {
-  color: #869ACB;
+  color: #869acb;
 }
 
 .icons {
-  width: 100%; /* Full-width */
-  overflow: auto; /* Overflow due to float */
+  width: 100%;
+  overflow: auto;
 }
 
 .iconsSorted {
@@ -454,9 +457,9 @@ body {
 }
 
 .icons img {
-  float: none; /* Float links side by side */
-  width: 10%; /* Equal width (5 icons with 20% width each = 100%) */
-  padding: 12px 0; /* Some top and bottom padding */
+  float: none;
+  width: 10%;
+  padding: 12px 0;
 }
 
 .changeColor {
