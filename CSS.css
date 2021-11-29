@@ -257,6 +257,7 @@ body {
   align-content: center;
 }
 
+
 .project_heading {
   position: relative;
 }
@@ -333,15 +334,15 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  width: 500px;
+  width: 100%;
   padding: 8px 25px;
-  height: 500px;
+  height: 100%;
   box-sizing: border-box;
   margin: 30px;
   position: relative;
 }
 .s-box img {
-  height: 300px;
+  height: 100%;
   width: 100%;
   padding: 5px;
 }
@@ -396,7 +397,7 @@ body {
 .s-btn:hover {
   background-color: darkgrey;
   border: 1px solid white;
-  color: #ffffff;
+  color: white;
   transition: all ease 0.3s;
 }
 
@@ -425,7 +426,7 @@ body {
 
 .aboutMe h1 {
   font-size: 80px;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px;
   align-content: center;
   flex-direction: column;
@@ -435,6 +436,7 @@ body {
   font-size: 3rem;
   margin-bottom: 8px;
   position: relative;
+  font-size: 5.5rem;
 }
 
 .aboutMe h2 {
